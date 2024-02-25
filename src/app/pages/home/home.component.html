@@ -1,13 +1,14 @@
 
 
-<header>
-  <app-menu-bar></app-menu-bar>
-</header>
+
 
 <app-menu-title></app-menu-title>
 <div class="container__articles">
+
+
   <div class="articles-main">
     <app-big-card
+        id="1"
         photoCover="https://remsoft.com.br/wp-content/uploads/2020/06/Imagem-principal.png"
         cardTitle="AGORA TÁ DINÂMICO"
         cardDescription="ELE CONSEGUIU DEIXAR DINAMICO "
@@ -17,17 +18,24 @@
   </div>
   <div class = "articles-others">
     <app-small-card
+        id="2"
         cardTitle="Texto 1"
         photoCover="https://remsoft.com.br/wp-content/uploads/2020/06/Imagem-principal.png"
     ></app-small-card>
     <app-small-card
+        id="3"
         cardTitle="Texto 1"
         photoCover="https://remsoft.com.br/wp-content/uploads/2020/06/Imagem-principal.png"
     ></app-small-card>
     <app-small-card
+        id="4"
         cardTitle="Texto 1"
         photoCover="https://remsoft.com.br/wp-content/uploads/2020/06/Imagem-principal.png"
     ></app-small-card>
+
+
+    <a [routerLink]="['content', id]"> Avançar</a>
   </div>
+
 
 </div>
